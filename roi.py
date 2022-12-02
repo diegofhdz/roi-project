@@ -47,8 +47,8 @@ def runProgram():
         elif user_choice == 'v':
             if len(list_of_investments) > 0:
                 print('\n')
-                for x in enumerate(list_of_investments):
-                    print(f"Investment {x[0]}:", x[1].name,  f"- {(x[1].roi):.2f}%")
+                for index, invest in enumerate(list_of_investments):
+                    print(f"Investment {index}:", invest.name,  f"- {(invest.roi):.2f}%")
             else:
                 print('\nNo current investments.')
 
